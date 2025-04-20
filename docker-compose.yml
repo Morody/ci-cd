@@ -1,0 +1,7 @@
+services:
+  backend:
+    image: back_img:latest
+    container_name: back_container
+    ports: 
+      - 80:8080
+    command: "python main.py"
