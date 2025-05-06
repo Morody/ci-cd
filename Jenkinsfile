@@ -4,7 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'ls -a'
-                sh 'python --version'
+                sh 'pip install -r requirements.txt'
+                sh 'python main.py'
             }
         }
     }
