@@ -11,7 +11,8 @@ pipeline {
                 sh 'ls -a'
                 sh 'apt update'
                 sh 'pip3 install -r requirements.txt --user'
-                sh 'python main.py'
+                sh 'python -d main.py'
+                sh 'pytest test.py'
             }
         }
     }
