@@ -17,10 +17,6 @@ pipeline {
                 sh 'git config --global --add safe.directory "/var/lib/jenkins/workspace/pipeline-1"'
                 sh 'git config --global user.email "adel-ufa@mail.ru"'
                 sh 'git config --global user.name "Morody"'
-                sh 'git remote add origin https://github.com/Morody/ci-cd.git'
-                sh 'git add .'
-                sh 'git commit -m "init"'
-                sh 'git push origin prod --force'
             }
         }
     }
