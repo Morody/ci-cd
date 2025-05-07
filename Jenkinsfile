@@ -19,7 +19,7 @@ pipeline {
                 sh 'git config --global user.name "Morody"'
                 sh 'git add *'
                 sh 'git commit -m "init"'
-                sh 'git push origin prod'
+                sh 'git push origin prod --force'
             }
         }
     }
