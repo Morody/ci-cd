@@ -15,6 +15,8 @@ pipeline {
                 sh 'python main.py &'
                 sh 'pytest test.py'
                 sh 'git config --global --add safe.directory "/var/lib/jenkins/workspace/pipeline-1"'
+                sh 'git config --global user.email "adel-ufa@mail.ru"'
+                sh 'git config --global user.name "Morody"'
                 sh 'git add main.py'
                 sh 'git commit -m "init"'
                 sh 'git push origin prod'
