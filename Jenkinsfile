@@ -14,6 +14,7 @@ pipeline {
                 sh 'pip3 install pytest'
                 sh 'python main.py &'
                 sh 'pytest test.py'
+                sh 'git push origin prod'
             }
         }
     }
